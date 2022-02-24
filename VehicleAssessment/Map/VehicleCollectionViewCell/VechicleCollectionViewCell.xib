@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VechicleCollectionViewCell" id="gTV-IL-0wX" customClass="VechicleCollectionViewCell" customModule="VehicleAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoCar" translatesAutoresizingMaskIntoConstraints="NO" id="GWt-yC-DBC">
+                        <rect key="frame" x="146" y="74" width="200" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="I6h-iD-Rx2"/>
+                            <constraint firstAttribute="height" constant="100" id="O38-Rh-61R"/>
+                        </constraints>
+                    </imageView>
+                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Zm6-Wi-Qcq">
+                        <rect key="frame" x="180.5" y="14" width="131.5" height="52"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-kz-1tW">
+                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50/min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAM-WB-lIp">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Seats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0R-QI-PeM">
+                                        <rect key="frame" x="74" y="0.0" width="57.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60/min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVT-M8-Cwr">
+                                <rect key="frame" x="39" y="31.5" width="53.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="GWt-yC-DBC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="W6e-aO-ohX"/>
+                <constraint firstItem="GWt-yC-DBC" firstAttribute="top" secondItem="Zm6-Wi-Qcq" secondAttribute="bottom" constant="8" id="g7A-zL-94T"/>
+                <constraint firstItem="Zm6-Wi-Qcq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="zFF-1j-TUZ"/>
+                <constraint firstAttribute="bottom" secondItem="GWt-yC-DBC" secondAttribute="bottom" id="zfh-N9-eTf"/>
+            </constraints>
+            <size key="customSize" width="492" height="174"/>
+            <connections>
+                <outlet property="carImageView" destination="GWt-yC-DBC" id="1CF-P1-xBk"/>
+                <outlet property="driveLabel" destination="LAM-WB-lIp" id="fQN-e1-Dqb"/>
+                <outlet property="parkLabel" destination="zVT-M8-Cwr" id="ooc-PB-Bjh"/>
+                <outlet property="seatsLabel" destination="b0R-QI-PeM" id="6r0-u4-JP3"/>
+            </connections>
+            <point key="canvasLocation" x="437.68115942028987" y="64.955357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demoCar" width="300" height="163"/>
+    </resources>
+</document>
